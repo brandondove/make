@@ -18,7 +18,7 @@ $aspect   = ( isset( $ttfmake_section_data[ 'aspect' ] ) ) ? esc_attr( $ttfmake_
 	<?php endif; ?>
 	<div class="builder-section-content">
 		<?php if ( ! empty( $gallery ) ) : $i = 0; foreach ( $gallery as $item ) :
-			$onclick = ' onclick="return false;"';
+			$onclick = '';
 			if ( '' !== $item['link'] ) :
 				$onclick = ' onclick="window.location.href = \'' . esc_js( esc_url( $item['link'] ) ) . '\';"';
 			endif;
